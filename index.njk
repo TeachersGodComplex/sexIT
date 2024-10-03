@@ -1,0 +1,103 @@
+---
+layout: layouts/main.njk
+title: SexIT23
+---
+
+<!-- 
+Här finns all HTML för hem-sidan. Vill ni skapa fler sidor är det bara att göra 
+kopior av denna och byta namn på både filerna (min-sida.njk -> /min-sida) och
+titeln ovan.
+
+Denna filen använder ett filformat som heter Nunjucks. Vill ni läsa på mer om det
+finns det rätt bra dokumentation på https://mozilla.github.io/nunjucks/. Generellt
+funkar det typ exakt som vanlig HTML, men med några quirks som kan vara nice ibland.
+-->
+
+<section class="hero">
+  <div class="container">
+    <p class="body-lg">
+      IT-festeriet <span class="sexit">SexIT</span> presenterar stolt
+    </p>
+    <h1 class="headline-1">Barbaphesten</h1>
+    <div class="buttons">
+      <add-to-calendar-button
+        label="Barbaphesten 2023"
+        name="Barbaphesten"
+        options="'Google'"
+        location="Kårhuset Örat, Linköping"
+        startDate="2023-12-06"
+        endDate="2023-12-07"
+        startTime="20:00"
+        endTime="02:00"
+        timeZone="Europe/Stockholm"
+      ></add-to-calendar-button>
+    </div>
+  </div>
+</section>
+
+<div class="timer">
+  <span>--:--:--:--</span>
+  <span>--:--:--:--</span>
+  <span>--:--:--:--</span>
+  <span>--:--:--:--</span>
+  <span>--:--:--:--</span>
+</div>
+
+<div class="music-player"></div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h2 class="headline-1">Biljettsläpp</h2>
+    <p class="body-lg">
+      Biljetterna till Barbaphesten 2023 släpps den 28:e November. Vi i
+      <span class="sexit">SexIT</span> kommer sitta i rum U7 från 17:15. 
+      Kom i tid och ta med fotolegitimation eller LiU kort.
+    </p>
+
+    <div class="buttons">
+      <add-to-calendar-button
+        label="Biljettsläpp"
+        name="Biljettsläpp Barbaphesten"
+        options="'Google'"
+        location="B-huset, Linköping"
+        startDate="2023-11-28"
+        endDate="2023-11-28"
+        startTime="17:15"
+        endTime="18:15"
+        timeZone="Europe/Stockholm"
+      ></add-to-calendar-button>
+    </div>
+  </div>
+
+  <section class="text-image left">
+    <div class="text">
+      <h2 class="headline-2">Var då?</h2>
+      <p>Barbaphesten 2023 är anordnat i Kårhuset Örat på campus US.</p>
+    </div>
+    <img src="/public/images/örat.webp" alt="Kårhuset Örat" />
+  </section>
+
+  <section class="text-image right">
+    <div class="text">
+      <h2 class="headline-2">När då?</h2>
+      <p>Den 6e December smäller det.</p>
+    </div>
+    <img src="/public/images/kalender.webp" alt="Kårhuset Örat" />
+  </section>
+
+  <section class="text-image left">
+    <div class="text">
+      <h2 class="headline-2">Vilka ligger bakom?</h2>
+      <p>
+        Barbaphesten anordnas av IT-programmets egna festerister,
+        <span class="sexit">SexIT</span>. Vi fixar dunka-dunka, häller upp
+        barbariter och städar undan när IT-ettan kräkts på toaletten.
+      </p>
+    </div>
+    <img src="/public/images/sexit.webp" alt="Kårhuset Örat" />
+  </section>
+
+  <section class="barbapang">
+    <img src="/public/images/barbapang.webp" alt="" />
+  </section>
+</div>
