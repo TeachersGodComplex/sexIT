@@ -1,0 +1,107 @@
+/* 
+Här importeras alla css filerna. 
+Finns dem inte här så inkluderas dem inte i slutprodukten. 
+*/
+@import "variables.css";
+@import "components/container.css";
+@import "components/sexit.css";
+@import "components/text-image.css";
+@import "components/hero.css";
+@import "components/barbapang.css";
+@import "components/timer.css";
+@import "components/jumbotron.css";
+
+/* Diverse globala CSS-stilar */
+:root {
+  font: var(--font-body);
+
+  /* Antialiasing av typsnitt, lämna gärna dessa som de är */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-on-background);
+}
+
+body.no-scroll {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
+* {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: 3px solid var(--color-focus-outline);
+    outline-offset: var(--space-xs);
+    border-radius: var(--rounded);
+  }
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.headline-1 {
+  font: var(--font-headline-1);
+  margin-bottom: var(--space-lg);
+}
+
+.headline-2 {
+  font: var(--font-headline-2);
+  margin-bottom: var(--space-lg);
+}
+
+.headline-3 {
+  font: var(--font-headline-3);
+  margin-bottom: var(--space-sm);
+}
+
+.headline-4 {
+  font: var(--font-headline-4);
+  margin-bottom: var(--space-sm);
+}
+
+.body-lg {
+  font: var(--font-body-lg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.link {
+  text-decoration: underline;
+}
+
+pre {
+  font: var(--font-code);
+  background: var(--color-panel);
+  padding: var(--space-sm);
+  border-radius: var(--rounded);
+  margin: var(--space-xs) 0;
+}
+
+code {
+  font: var(--font-code);
+  background: var(--color-panel);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--rounded);
+  margin: 0 var(--space-xs);
+}
+
+/* Avstängda knappar och input-fält ska vara lite genomskinliga */
+[disabled] {
+  opacity: 30% !important;
+  cursor: default !important;
+}

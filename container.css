@@ -1,0 +1,18 @@
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: calc(1.325rem + 0.9vw);
+  padding-right: calc(1.325rem + 0.9vw);
+}
+
+.container.fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 1200px) {
+  .container.has-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

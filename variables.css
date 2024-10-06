@@ -1,0 +1,94 @@
+/* 
+Denna rad importerar typsnitt från Google Fonts. Läs deras dokumentation 
+om du är intresserad av hur det funkar 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Nunito:wght@400;500;700&family=Satisfy&display=swap");
+
+/*
+Denna delen är rätt skoj. Den har en massa roliga CSS-variabler som 
+man sedan kan använda på andra ställen i webbsidan. Till exempel
+kan du lägga till en skugga någonstans genom att bara köra
+
+box-shadow: var(--shadow);
+
+vilket är en mycket mindre huvudvärk än om du satt och försökte
+få till skuggan på allt manuellt.
+*/
+:root {
+  --font-display: Satisfy, cursive, sans-serif;
+  --font-sans: Nunito, sans-serif;
+  --font-mono: Fira Code, monospace;
+
+  --font-headline-1: rfs(700 6rem / 1.2 var(--font-display));
+  --font-headline-2: rfs(700 2.75rem / 1.2 var(--font-display));
+  --font-headline-3: rfs(700 1.25rem / 1.2 var(--font-display));
+  --font-headline-4: 700 0.8125rem / 1.6 var(--font-display);
+  --font-body-lg: 1.25rem / 1.5 var(--font-sans);
+  --font-body: 1rem / 1.5 var(--font-sans);
+  --font-body-sm: 0.875rem / 1.5 var(--font-sans);
+  --font-body-xs: 0.75rem / 1.5 var(--font-sans);
+  --font-button: 600 0.875rem / 1 var(--font-display);
+  --font-label: 600 0.75rem / 1.4 var(--font-sans);
+  --font-code: 0.9375rem / 1.2 var(--font-mono);
+  --font-code-lg: 1.125rem / 1.2 var(--font-mono);
+
+  --space-xs: 0.1875rem;
+  --space-sm: calc(2 * var(--space-xs));
+  --space-md: calc(2 * var(--space-sm));
+  --space-lg: calc(2 * var(--space-md));
+  --space-xl: calc(2 * var(--space-lg));
+  --space-2xl: calc(2 * var(--space-xl));
+  --space-3xl: calc(2 * var(--space-2xl));
+
+  --shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+
+  --rounded: 7px;
+  --rounded-sm: 2px;
+
+  --ease-out: 0.125s easeOutCubic;
+}
+
+/*
+Färgscheman, i R G B format (blev lättast så). Ändra gärna färgerna
+för att passa Barbaphestens framtida teman.
+*/
+:root {
+  --cs-background: 21 2 13; /* Bakgrundsfärg */
+  --cs-accent: 218 24 132; /* Accentfärg, för knappar och sånt */
+  --cs-on-background: 251 231 242; /* Text på bakgrundsfärg */
+  --cs-on-accent: 251 231 242; /* Text på accentfärg */
+  --cs-panel: 251 231 242; /* "Panel"-färg, mer info nedan */
+}
+
+/* 
+Rör endast denna delen om du vet vad du håller på med, men läs gärna
+igenom så du fattar bättre hur färg-variablerna fungerar!
+*/
+* {
+  /*
+  Panelfärger är ett simpelt men kanske lite tråkigt sätt att göra
+  "paneler" som kapslar in information på webbsidan. Panelfärgen i
+  färgschemat ska gärna vara motsatt bakgrundsfärgen (ofta samma
+  som on-background färgen, men inte nödvändigtvis) för bra effekt.
+  */
+  --color-panel-half: rgb(var(--cs-panel) / 2.5%);
+  --color-panel: rgb(var(--cs-panel) / 5%);
+  --color-panel-double: rgb(var(--cs-panel) / 10%);
+  --color-panel-triple: rgb(var(--cs-panel) / 15%);
+
+  /* Background Colors */
+  --color-background: rgb(var(--cs-background));
+  --color-accent: rgb(var(--cs-accent));
+
+  /* Text Colors */
+  --color-on-background: rgb(var(--cs-on-background));
+  --color-on-background-muted: rgb(var(--cs-on-background) / 60%);
+  --color-on-background-subtle: rgb(var(--cs-on-background) / 20%);
+
+  --color-on-accent: rgb(var(--cs-on-accent));
+  --color-on-accent-muted: rgb(var(--cs-on-accent) / 60%);
+  --color-on-accent-subtle: rgb(var(--cs-on-accent) / 20%);
+
+  /* Tab Focus Outline Color */
+  --color-focus-outline: rgb(var(--cs-accent) / 50%);
+}

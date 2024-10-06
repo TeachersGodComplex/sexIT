@@ -1,0 +1,24 @@
+.hero {
+  text-align: center;
+  height: 100vh;
+  margin-bottom: var(--space-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & p {
+    font: var(--font-code-lg);
+  }
+
+  & h1 {
+    color: var(--color-accent);
+  }
+
+  & .buttons {
+    display: flex;
+    margin: var(--space-lg) 0;
+    gap: var(--space-md);
+    align-items: center;
+    justify-content: center;
+  }
+}
