@@ -24,8 +24,9 @@ Finns dem inte här så inkluderas dem inte i slutprodukten.
 }
 
 body {
-  background: var(--color-background);
-  color: var(--color-on-background);
+  background: rgb(219,1,154);
+  background: linear-gradient(50deg, rgba(219, 1, 154, 0.692) 0%, rgba(219, 1, 154, 0.555) 50%, rgba(219, 1, 154, 0.253) 100%);
+  color: rgb(0, 0, 0);
 }
 
 body.no-scroll {
@@ -47,7 +48,7 @@ body.no-scroll {
 }
 
 button {
-  border: none;
+  border: 5px;
   background: none;
 }
 
@@ -59,6 +60,7 @@ button {
 .headline-2 {
   font: var(--font-headline-2);
   margin-bottom: var(--space-lg);
+  text-align: center;
 }
 
 .headline-3 {
@@ -100,8 +102,3 @@ code {
   margin: 0 var(--space-xs);
 }
 
-/* Avstängda knappar och input-fält ska vara lite genomskinliga */
-[disabled] {
-  opacity: 30% !important;
-  cursor: default !important;
-}

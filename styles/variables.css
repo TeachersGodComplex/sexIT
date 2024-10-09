@@ -15,7 +15,7 @@ vilket är en mycket mindre huvudvärk än om du satt och försökte
 få till skuggan på allt manuellt.
 */
 :root {
-  --font-display: Satisfy, cursive, sans-serif;
+  --font-display: Arial , cursive, sans-serif;
   --font-sans: Nunito, sans-serif;
   --font-mono: Fira Code, monospace;
 

@@ -4,8 +4,8 @@
   display: grid;
   gap: var(--space-xl);
   align-items: center;
-  background: var(--color-panel);
-  border-radius: var(--rounded);
+  background: rgb(80, 42, 42);
+  border-radius: 25px;
 }
 
 @media (min-width: 700px) {
@@ -33,6 +33,7 @@
   }
 }
 
+/*h2 rubrik*/
 .text-image > .text h2 {
   color: var(--color-accent);
 }
