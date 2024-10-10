@@ -18,7 +18,8 @@
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "dayjs": "^1.11.10",
-    "fast-glob": "^3.3.1"
+    "fast-glob": "^3.3.1",
+    "time-span": "^5.1.0"
   },
   "devDependencies": {
     "eleventy-plugin-postcss": "^1.0.4",
