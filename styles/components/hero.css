@@ -1,6 +1,6 @@
 .hero {
   text-align: center;
-  height: 100vh;
+  height: 90vh;
   margin-bottom: var(--space-2xl);
   display: flex;
   align-items: center;
