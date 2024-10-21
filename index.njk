@@ -13,51 +13,36 @@ finns det rätt bra dokumentation på https://mozilla.github.io/nunjucks/. Gener
 funkar det typ exakt som vanlig HTML, men med några quirks som kan vara nice ibland.
 -->
 
-<div>
-  <img src="/public/images/hero2.webp" alt="Snow" style="width:100%;">
-<div>
 
 <section class="hero">
+  <img src="/public/images/hero2.webp" alt="Snow" style="width:100%;">
   <div class="centered">
-
-    
-  <audio controls autoplay>
-  <source src="https://spritfest.se/sexit/barba-boy.mp3" type="audio/mpeg">
-    <ul id="playlist">
-          <li data-src="https://spritfest.se/sexit/barba-boy.mp3">Låt 1</li>
-          <li data-src="https://spritfest.se/sexit/barbaphesten-ar-pa-g.mp3">Låt 2</li>
-          <li data-src="https://spritfest.se/sexit/svep-den.mp3">Låt 3</li>
-    </ul>
-  </audio>
-
-
     <p class="body-lg" style="font-size: 30px;">
       IT-festeriet <span class="sexit">SexIT</span> presenterar stolt
     </p>
     <h1 class="headline-1">Barbaphesten</h1>
-    <div class="buttons">
-      <add-to-calendar-button
-        label="Barbaphesten 2024"
-        name="BarbAphterski"
-        options="'Google'"
-        location="Kårhuset Örat, Linköping"
-        startDate="2024-12-24"
-        endDate="2024-12-25"
-        startTime="20:00"
-        endTime="02:00"
-        timeZone="Europe/Stockholm"
-      ></add-to-calendar-button>
-    </div>
-    <div>
-    <p class="body-lg" style="font-size: 30px;">
-    Vi ses i backen!
-    </p>
-    </div>
   </div>
 </section>
 
 <div class="container">
   <div class="jumbotron">
+      <div class="buttons">
+    <add-to-calendar-button
+      label="Barbaphesten 2024"
+      name="BarbAphterski"
+      options="'Google'"
+      location="Kårhuset Örat, Linköping"
+      startDate="2024-12-24"
+      endDate="2024-12-25"
+      startTime="20:00"
+      endTime="02:00"
+      timeZone="Europe/Stockholm">
+    </add-to-calendar-button>
+  </div>
+    <p class="body-lg" style="font-size: 30px; margin-bottom: var(--space-3xl);">
+    Vi ses i backen!
+    </p>
+
     <h2 class="headline-1">Biljettsläpp</h2>
     <h2 class="body-lg" style="color: black; font-size: 25px;">
       Biljetterna till Barbaphesten 2024 släpps den 23:e December. Vi i
