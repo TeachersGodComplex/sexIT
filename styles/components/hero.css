@@ -1,7 +1,6 @@
 .hero {
   text-align: center;
-  height: 60vh;
-  margin-bottom: var(--space-2xl);
+  margin-top: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,4 +20,5 @@
     align-items: center;
     justify-content: center;
   }
+
 }
