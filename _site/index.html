@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <title>SexIT23</title>
+  </head>
+  <body>
+    
+<!-- 
+Här finns all HTML för hem-sidan. Vill ni skapa fler sidor är det bara att göra 
+kopior av denna och byta namn på både filerna (min-sida.njk -> /min-sida) och
+titeln ovan.
+
+Denna filen använder ett filformat som heter Nunjucks. Vill ni läsa på mer om det
+finns det rätt bra dokumentation på https://mozilla.github.io/nunjucks/. Generellt
+funkar det typ exakt som vanlig HTML, men med några quirks som kan vara nice ibland.
+-->
+
+<section class="hero">
+  <div class="container">
+    <p class="body-lg" style="font-size: 20px;">
+      IT-festeriet <span class="sexit">SexIT</span> presenterar stolt
+    </p>
+    <h1 class="headline-1">Barbaphesten</h1>
+    <div class="buttons">
+      <add-to-calendar-button
+        label="Barbaphesten 2024"
+        name="BarbAphterski"
+        options="'Google'"
+        location="Kårhuset Örat, Linköping"
+        startDate="2024-12-24"
+        endDate="2024-12-25"
+        startTime="20:00"
+        endTime="02:00"
+        timeZone="Europe/Stockholm"
+      ></add-to-calendar-button>
+    </div>
+  </div>
+</section>
+
+<div class="timer">
+  <span>--:--:--:--</span>
+  <span>--:--:--:--</span>
+  <span>--:--:--:--</span>
+  <span>--:--:--:--</span>
+  <span>--:--:--:--</span>
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h2 class="headline-1">Biljettsläpp</h2>
+    <h2 class="body-lg" style="color: black; font-size: 25px;">
+      Biljetterna till Barbaphesten 2024 släpps den 23:e December. Vi i
+      <span class="sexit">SexIT</span> kommer sitta i ett rum från en tidpunk till en senare tidpunk. 
+      Kom i tid och ta med fotolegitimation eller LiU kort.
+    </h2>
+
+    <div class="buttons">
+      <add-to-calendar-button
+        label="Biljettsläpp"
+        name="Biljettsläpp BarbAphterski"
+        options="'Google'"
+        location="B-huset, Linköping"
+        startDate="2024-12-22"
+        endDate="2024-12-23"
+        startTime="23:59"
+        endTime="00:01"
+        timeZone="Europe/Stockholm"
+      ></add-to-calendar-button>
+    </div>
+  </div>
+
+  <section class="text-image left">
+    <div class="text">
+      <h2 class="headline-2">Var då?</h2>
+      <h3 style="text-align: center; color: white;">Barbaphesten 2024 är anordnat i Kårhuset Örat på campus US.</h3>
+    </div>
+    <img src="/public/images/Pub.webp" alt="Kårhuset Örat"/>
+  </section>
+
+  <section class="text-image right">
+    <div class="text">
+      <h2 class="headline-2">När då?</h2>
+      <h3 style="text-align: center; color: white;">Den 24e December smäller det.</h3>
+    </div>
+    <img src="/public/images/Kalender_jul.webp" alt="Kårhuset Örat"/>
+  </section>
+
+  <section class="text-image left">
+    <div class="text">
+      <h2 class="headline-2">Vilka ligger bakom?</h2>
+      <h3 style="text-align: center; color: white;">
+        Barbaphesten anordnas av IT-programmets egna festerister,
+        <span class="sexit">SexIT</span>. Vi fixar dunka-dunka, häller upp
+        barbariter och städar undan när farfar kräkts på toaletten.
+      </h3>
+    </div>
+    <img src="/public/images/Barba.webp" alt="Kårhuset Örat"/>
+  </section>
+
+  <section class="barbapang">
+    <img src="/public/images/barbapang.webp" alt="" />
+  </section>
+</div>
+
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
