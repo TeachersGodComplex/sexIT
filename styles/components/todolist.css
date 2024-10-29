@@ -1,6 +1,7 @@
 
-.list {
-  display: flex;
-  justify-content: center;
+@media (min-width: 700px) {
+  .list {
+    display: flex;
+    justify-content: center;
+  }
 }
-
